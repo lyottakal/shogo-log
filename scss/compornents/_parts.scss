@@ -1,0 +1,22 @@
+.btn {
+  width: 155px;
+  height: 37px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  background: linear-gradient(0.25turn, #FA41CC, #6020B0);
+  border-radius: 10px;
+  border: none;
+}
+
+.important-mark {
+  width: 60px;
+  height: 30px;
+  background-color: $navy;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 10px;
+}

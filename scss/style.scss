@@ -1,0 +1,1010 @@
+@import "../scss/compornents/_color.scss";
+@import "../scss/compornents/_parts.scss";
+@import "../scss/compornents/_tit.scss";
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #333333;
+  margin: 0%;
+}
+
+header {
+  width: 100%;
+  height: 94px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #FFFFFF;
+  box-shadow: 0px 3px 6px $gray;
+  .menu {
+    max-width: 1024px;
+    height: 94px;
+    margin: 0 auto;
+    &__nav {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &--header-logo {
+        width: 47px;
+        height: 47px;
+        margin: 0 16px 0 20px;
+      }
+      &--tit {
+        line-height: 94px;
+        font-size: 24px;
+        margin: 0 auto 0 0;
+      }
+      &--link {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        font-weight: bold;
+        margin: 0 184px 0 0;
+        li {
+          a {
+            text-decoration: none;
+            color: #333333;
+          }
+        }
+        li:nth-child(1),
+        li:nth-child(2) {
+          font-size: 16px;
+          margin: 0 46px 0 0;
+        }
+      }
+      &--humberger {  
+        width: 50px;
+        height: 30px;
+        border-top: 5px solid #333333;
+        border-bottom: 5px solid #333333;
+        position: relative;
+        display: none;
+        span {
+          display: inline-block;
+          width: 50px;
+          height: 5px;
+          background-color: #333333;
+          transform: translateY(-3px);
+        }
+      }
+    }
+    &--btn {
+      margin: 0 21px 0 auto;
+    }
+    &__humberger-list {
+      width: 200px;
+      text-align: center;
+      list-style: none;
+      margin: 0 0 0 auto;
+      padding: 0;
+      display: none;
+      li {
+        height: 50px;
+        line-height: 50px;
+        border-collapse: collapse;
+      }
+      li:nth-child(1),
+      li:nth-child(2) {
+        background-color: #fff;
+      }
+      li:nth-child(1):hover,
+      li:nth-child(2):hover {
+        background-color: $lightblue;
+      }
+      &--contact-color {
+        color: #FFFFFF;
+        background: linear-gradient(0.25turn, #FA41CC, #6020B0);
+      }
+    }
+    &__humberger-list.is-active {
+      display: block;
+    }
+  }
+}
+
+main {
+  padding: 94px 0 0 0;
+  background-image: url(../img/circle.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top -150px right -120px;
+  .top {
+    max-width: 1024px;
+    margin: 0 auto;
+    height: 674px;
+    // visibility: hidden;
+    position: relative;
+    &__contents {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      &--text {
+        margin: 0 auto 0 0;
+        &--tit {
+          font-size: 32px;
+          margin: 159px 0 0 0;
+        }
+        &--subtit {
+          font-size: 16px;
+          margin: 44px 0 0 0;
+        }
+        &--btn {
+          margin: 53px 0 0 0;
+        }
+      }
+    }
+  }
+
+  .feature {
+    max-width: 1024px;
+    height: 1809px;
+    margin: 0 auto;
+    padding: 10px;
+    &__tit {
+      margin: 61px 0 0 0;
+    }
+    &__subtit {
+      margin: 10px 0 0 0;
+    }
+    &__fast-coding,
+    &__quality,
+    &__response {
+      &--caption {
+        font-size: 28px;
+        text-align: center;
+        margin: 57px 0 0 0;
+      }
+      &--discription {
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 0 0 0;
+      }
+    }
+    &__quality {
+      &--caption {
+        margin: 86px 0 0 0;
+      }
+      &--discription {
+        margin: 60px 0 0 0;
+      }
+    }
+    &__response {
+      &--caption {
+        margin: 86px 0 0 0;
+      }
+      &--discription {
+        display: flex;
+        justify-content: space-between;
+        margin: 60px 0 0 0;
+      }
+    }
+  }
+
+  .price {
+    height: 744px;
+    background-color: $lightblue;
+    padding: 10px;
+    &__tit {
+      margin: 45px 0 0 0;
+    }
+    &__subtit {
+      margin: 11px 0 0 0;
+    }
+    &__list {
+      width: 926px;
+      height: 410px;;
+      background-color: #FFFFFF;
+      border-collapse: collapse;
+      margin: 70px auto 0;
+      &--tr {
+        &--coding,
+        &--cost {
+          font-size: 16px;
+          border: 1px solid $lightgray;
+        }
+        &--coding {
+          width: 290px;
+          text-align: center;
+          br {
+            display: none;
+          }
+        }
+        &--cost {
+          padding: 0 0 0 30px;
+        }
+      }
+    }
+    &__comment {
+      font-size: 16px;
+      text-align: center;
+      margin: 36px 0 0 0;
+    }
+  }
+
+  .faq {
+    height: 686px;
+    &__tit {
+      font-size: 32px;
+      text-align: center;
+      margin: 45px 0 0 0;
+    }
+    &__subtit {
+      font-size: 16px;
+      color: $blue;
+      text-align: center;
+      margin: 11px 0 0 0;
+    }
+    &__list {
+      max-width: 907px;
+      margin: 32px auto 0;
+      &--question1,
+      &--question2,
+      &--question3 {
+        height: 58px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 58px;
+        border: 1px solid $lightgray;
+        br {
+          display: none;
+        }
+      }
+      &--question1:hover,
+      &--question2:hover,
+      &--question3:hover {
+        background-color: $lightblue;
+      }
+      &--question1.is-acive,
+      &--question2.is-acive,
+      &--question3.is-acive {
+        background-color: $lightblue;
+      }
+      &--answer1,
+      &--answer2,
+      &--answer3 {
+        font-size: 14px;
+        line-height: 26px;
+        margin: 0;
+        border: 1px solid $lightgray;
+        background-color: $lightgray;
+        display: none;
+      }
+      &--answer1.is-active,
+      &--answer2.is-active,
+      &--answer3.is-active {
+        display: block;
+      }
+      &--answer1 {
+        height: 93px;
+        padding: 17px 87px 0 35px;
+      }
+      &--answer2 {
+        height: 70px;
+        padding: 24px 87px 0 35px;
+      }
+      &--answer3 {
+        height: 96px;
+        padding: 24px 87px 0 35px;
+      }
+    }
+  }
+
+  .blog {
+    height: 668px;
+    background-color: $lightblue;
+    padding: 10px;
+    &__tit {
+      margin: 45px 0 0;
+    }
+    &__subtit {
+      margin: 10px 0 0;
+    }
+    &__contents {
+      display: flex;
+      justify-content: space-between;
+      margin: 55px 60px 0;
+      &--img {
+        width: 390px;
+        height: 387px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 3px 6px $gray;
+        position: relative;
+        img {
+          width: 100%;
+        }
+        &--txt {
+          &--l1 {
+            margin: 14px 30px auto 18px;
+          }
+          &--l2 {
+            margin: 0;
+            position: absolute;
+            top: 352px;
+            left: 271px;
+          }
+        }
+      }
+    }
+  }
+
+  .works {
+    height: 700px;
+    &__tit {
+      margin: 55px 0 0 0;
+    }
+    &__subtit {
+      margin: 11px 0 0 0;
+    }
+    &__contents {
+      display: flex;
+      justify-content: center;
+      &--img {
+        width: 322px;
+        height: 407px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        margin: 68px 28px 0;
+        img {
+          width: 100%;
+          height: auto;
+        }
+        &--txt {
+          &--l1 {
+            font-size: 16px;
+            display: block;
+            width: 288px;
+            margin: 18px auto auto;
+          }
+          &--l2 {
+            font-size: 14px;
+            margin: 30px auto auto 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .contact {
+    height: 1027px;
+    background: linear-gradient(0.25turn, #05A5FA, #63FBD7, #67FFD6);
+    padding: 10px;
+    &__tit,
+    &__subtit1,
+    &__subtit2 {
+      color: #FFFFFF;
+      text-align: center;
+    }
+    &__tit {
+      font-size: 32px;
+      margin: 53px 0 0 0;
+    }
+    &__subtit1 {
+      font-size: 16px;
+      margin: 7px 0 0 0;
+    }
+    &__subtit2 {
+      font-size: 16px;
+      margin: 36px 0 0 0;
+    }
+    &__form {
+      width: 908px;
+      height: 689px;
+      background-color: #FFFFFF;
+      margin: 44px auto 0;
+      padding: 10px;
+      &--parts {
+        margin: 20px 0 0 62px;
+        &--category {
+          display: flex;
+          &--name,
+          &--email,
+          &--contact {
+            padding: 3px 23px 3px 0;
+          }
+        }
+        input {
+          width: 499px;
+          height: 43px;
+          background-color: $lightblue;
+          border: none;
+          margin: 35px 0 0 0;
+        }
+        textarea {
+          width: 783px;
+          height: 179px;
+          background-color: $lightblue;
+          border: none;
+          margin: 35px 0 0 0;
+        }
+      }
+      &--checkbox {
+        font: 16px;
+        text-align: center;
+        margin: 30px 0 0 0;
+        input {
+          width: 20px;
+          height: 20px;
+          vertical-align: middle;
+          margin: 0 10px 0 0;
+        }
+      }
+      &--submit {
+        display: block;
+        margin: 31px auto 0;
+      }
+    }
+  }
+}
+
+footer {
+  height: 244px;
+  background-color: $footergray;
+  padding: 10px;
+  text-align: center;
+  h1 {
+    font-size: 24px;
+    padding: 33px 0 0 0;
+  }
+  .footer-subtit {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    margin: 21px 0 0 0;
+    padding: 0 0 0 40px;
+    &__txt1 {
+      br {
+        display: none;
+      }
+    }
+  }
+  .footer-copyright {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 52px 0 0 0;
+  }
+}
+
+
+@media screen and (max-width: 1400px) {
+/* 1250pxまでの幅の場合に適応される */
+  main {
+    .blog {
+      height: 2200px;
+      &__contents {
+        flex-direction: column;
+        align-items: center;
+        &--img {
+          width: 600px;
+          height: 550px;
+          // margin: ;
+          &--txt {
+            &--l2 {
+              top: 500px;
+              left: 450px;
+            }
+          }
+        }
+        &--img:nth-child(2),
+        &--img:nth-child(3) {
+          margin: 100px 0 0 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+/* 1024pxまでの幅の場合に適応される */
+  header {
+    // min-width: 768px;
+    .menu {
+      &__nav {
+        justify-content: start;
+        &--tit {
+          margin: 0 50px 0 0;
+        }
+        &--link {
+          display: none;
+        }
+        &--btn {
+          margin: 0 50px 0 0;
+        }
+        &--humberger {
+          margin: 0 20px 0 auto;
+          display: block;
+        }
+      }
+    }
+  }
+  
+  main {
+    margin: 0 auto;
+    background-size: 500px;
+    .top {
+      max-width: 700px;
+      height: 600px;
+      margin: 0 auto;
+      &__contents {
+        &--text {
+          &--tit {
+            font-size: 22px;
+            margin: 30px 0 0 0;
+          }
+          &--subtit {
+            font-size: 12px;
+          }
+        }
+        img {
+          width: 400px;
+          height: auto;
+        }
+      }
+    }
+
+    .feature {
+      max-width: 800px;
+      height: 1500px;
+      margin: 0 auto;
+      &__tit {
+        font-size: 22px;
+      }
+      &__subtit {
+        font-size: 12px;
+      }
+      &__fast-coding,
+      &__quality,
+      &__response {
+        &--capion {
+          font-size: 18px;
+        }
+        &--discription {
+          justify-content: space-around;
+          img {
+            width: 300px;
+            height: auto;
+          }
+          &--txt {
+            &--l1 {
+              font-size: 18px;
+              margin: 50px 0 0 0;
+              line-height: 30px;
+            }
+            &--l2 {
+              font-size: 12px;
+              margin: 30px 0 0 0;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .price {
+      &__tit {
+        font-size: 22px;
+      }
+      &__subtit {
+        font-size: 12px;
+      }
+      &__list {
+        width: 600px;
+      }
+    }
+
+    .faq {
+      &__tit {
+        font-size: 22px;
+      }
+      &__subtit {
+        font-size: 12px;
+      }
+      &__list {
+        width: 700px;
+        &--answer1 {
+          height: 120px;
+        }
+      }
+    }
+
+    .blog {
+      &__tit {
+        font-size: 22px;
+      }
+      &__subtit {
+        font-size: 12px;
+      }
+      &__contents {
+        max-width: 800px;
+        margin: 55px auto 0;
+      }
+    }
+
+    .works {
+      &__tit {
+        font-size: 22px;
+      }
+      &__subtit {
+        font-size: 12px;
+      }
+      &__contents--img {
+        width: 250px;
+        height: 350px;
+        &--txt {
+          &--l1 {
+            font-size: 12px;
+            width: 210px;
+          }
+          &--l2 {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+
+    .contact {
+      &__tit {
+        font-size: 22px;
+      }
+      &__subtit1 {
+        font-size: 12px;
+      }
+      &__subtit2 {
+        font-size: 12px;
+      }
+      &__form {
+        width: 600px;
+        &--parts {
+          margin: 20px 0 0 40px;
+          &--category {
+            &--name,
+            &--email,
+            &--contact {
+              font-size: 12px;
+            }
+            .important-mark {
+              width: 40px;
+              height: 25px;
+              font-size: 10px;
+              line-height: 25px;
+            }
+          }
+          input {
+            width: 300px;
+          }
+          textarea {
+            width: 500px;
+          }
+        }
+        &--checkbox {
+          input {
+            width: 10px;
+            height: 10px;
+          }
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+//   footer {
+//     min-width: 768px;
+//   }
+}
+
+@media screen and (max-width: 768px) {
+  /* 768pxまでの幅の場合に適応される */
+  header {
+    .menu {
+      &__nav {
+        justify-content: start;
+        &--header-logo {
+          width: 40px;
+          height: 40px;
+        }  
+      }
+    }
+  }
+
+  main {
+    .top {
+      height: 800px;
+      &__contents {
+        flex-direction: column-reverse;
+        align-items: center;
+        &--text {
+          margin: 0;
+          &--tit {
+            font-size: 28px;
+            text-align: center;
+          }
+          &--subtit {
+            font-size: 16px;
+            text-align: center;
+          }
+          &--btn {
+            margin: 53px auto 0;
+            display: block;
+          }
+        }
+      }
+    }
+
+    .feature {
+      height: 2200px;
+      &__fast-coding,
+      &__response {
+        &--discription {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      &__quality {
+        &--discription {
+          flex-direction: column-reverse;
+          align-items: center;
+        }
+      }
+      &__fast-coding,
+      &__quality,
+      &__response {
+        &--discription {
+          &--txt {
+            &--l1,
+            &--l2 {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+
+    .price {
+      &__list {
+        width: 400px;
+        &--tr {
+          height: 70px;
+          &--coding {
+            width: 200px;
+            br {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    .faq {
+      height: 900px;
+      &__list {
+        width: 420px;
+        &--answer1 {
+          height: 120px;
+        }
+        &--answer2 {
+          height: 50px;
+        }
+        &--answer3 {
+          height: 80px;
+        }
+        &--answer1,
+        &--answer2,
+        &--answer3 {
+          padding: 20px;
+        }
+      }
+    }
+
+    .blog {
+      height: 1800px;
+      &__contents {
+        &--img {
+          max-width: 400px;
+          height: 400px;
+          &--txt {
+            &--l2 {
+              top: 350px;
+              left: 280px;
+            }
+          }
+        }
+      }
+    }
+
+    .contact {
+      &__form {
+        width: 400px;
+        &--parts {
+          margin: 20px 0 0 40px;
+          &--category {
+            &--name,
+            &--email,
+            &--contact {
+              font-size: 12px;
+            }
+            .important-mark {
+              width: 40px;
+              height: 25px;
+              font-size: 10px;
+              line-height: 25px;
+            }
+          }
+          input {
+            width: 300px;
+          }
+          textarea {
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* 600pxまでの幅の場合に適応される */
+  header {
+    .menu {
+      &__nav {
+        &--tit {
+          font-size: 22px;
+        }
+        &--btn {
+          display: none;
+        }
+        &--humberger {
+          margin: 0 0 0 50px;
+        }
+      }
+    }
+  }
+
+  footer {
+    height: 200px;
+    h1 {
+      font-size: 16px;
+    }
+    .footer-subtit {
+      &__txt1 {
+        font-size: 9px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /* 425pxまでの幅の場合に適応される */
+  header {
+    .menu {
+      &__nav {
+        &--header-logo {
+          width: 30px;
+          height: 30px;
+        }  
+        &--tit {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  
+  main {
+
+    .faq {
+      height: 900px;
+      &__list {
+        width: 300px;
+        &--question1,
+        &--question2 {
+          line-height: 40px;
+          height: 80px;
+          br {
+            display: block;
+          }
+        }
+        &--answer1 {
+          height: 160px;
+        }
+        &--answer2 {
+          height: 80px;
+        }
+        &--answer3 {
+          height: 110px;
+        }
+        &--answer1,
+        &--answer2,
+        &--answer3 {
+          line-height: 20px;
+          padding: 20px 40px;
+        }
+        
+
+      }
+    }
+
+    .blog {
+      height: 1300px;
+      &__contents {
+        &--img {
+          max-width: 300px;
+          height: 300px;
+          &--txt {
+            &--l2 {
+              top: 250px;
+              left: 200px;
+            }
+            &--l1,
+            &--l2 {
+              font-size: 9px;
+            }
+          }
+        }
+      }
+    }
+
+    .contact {
+      &__form {
+        width: 300px;
+        &--parts {
+          margin: 20px 0 0 40px;
+          &--category {
+            &--name,
+            &--email,
+            &--contact {
+              font-size: 12px;
+            }
+            .important-mark {
+              width: 40px;
+              height: 25px;
+              font-size: 10px;
+              line-height: 25px;
+            }
+          }
+          input {
+            width: 200px;
+          }
+          textarea {
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  /* 375pxまでの幅の場合に適応される */
+  main {
+    .price {
+      &__list {
+        width: 350px;
+      }
+    }
+
+    // .faq {
+    //   &__list {
+    //     width: 300px;
+    //     &--question1,
+    //     &--question2 {
+
+    //     }
+    //   }
+    // }
+  }
+  footer {
+    height: 100px;
+    h1 {
+      font-size: 14px;
+    }
+    .footer-subtit {
+      padding: 0
+    }
+  }
+}

@@ -1,0 +1,947 @@
+@charset "UTF-8";
+.btn {
+  width: 155px;
+  height: 37px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  background: linear-gradient(0.25turn, #FA41CC, #6020B0);
+  border-radius: 10px;
+  border: none;
+}
+
+.important-mark {
+  width: 60px;
+  height: 30px;
+  background-color: #0C449B;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 10px;
+}
+
+.tit {
+  font-size: 32px;
+  text-align: center;
+}
+
+.subtit {
+  font-size: 16px;
+  color: #3BA6C9;
+  text-align: center;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #333333;
+  margin: 0%;
+}
+
+header {
+  width: 100%;
+  height: 94px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #FFFFFF;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+header .menu {
+  max-width: 1024px;
+  height: 94px;
+  margin: 0 auto;
+}
+
+header .menu__nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .menu__nav--header-logo {
+  width: 47px;
+  height: 47px;
+  margin: 0 16px 0 20px;
+}
+
+header .menu__nav--tit {
+  line-height: 94px;
+  font-size: 24px;
+  margin: 0 auto 0 0;
+}
+
+header .menu__nav--link {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  font-weight: bold;
+  margin: 0 184px 0 0;
+}
+
+header .menu__nav--link li a {
+  text-decoration: none;
+  color: #333333;
+}
+
+header .menu__nav--link li:nth-child(1),
+header .menu__nav--link li:nth-child(2) {
+  font-size: 16px;
+  margin: 0 46px 0 0;
+}
+
+header .menu__nav--humberger {
+  width: 50px;
+  height: 30px;
+  border-top: 5px solid #333333;
+  border-bottom: 5px solid #333333;
+  position: relative;
+  display: none;
+}
+
+header .menu__nav--humberger span {
+  display: inline-block;
+  width: 50px;
+  height: 5px;
+  background-color: #333333;
+  transform: translateY(-3px);
+}
+
+header .menu--btn {
+  margin: 0 21px 0 auto;
+}
+
+header .menu__humberger-list {
+  width: 200px;
+  text-align: center;
+  list-style: none;
+  margin: 0 0 0 auto;
+  padding: 0;
+  display: none;
+}
+
+header .menu__humberger-list li {
+  height: 50px;
+  line-height: 50px;
+  border-collapse: collapse;
+}
+
+header .menu__humberger-list li:nth-child(1),
+header .menu__humberger-list li:nth-child(2) {
+  background-color: #fff;
+}
+
+header .menu__humberger-list li:nth-child(1):hover,
+header .menu__humberger-list li:nth-child(2):hover {
+  background-color: #EEFBFB;
+}
+
+header .menu__humberger-list--contact-color {
+  color: #FFFFFF;
+  background: linear-gradient(0.25turn, #FA41CC, #6020B0);
+}
+
+header .menu__humberger-list.is-active {
+  display: block;
+}
+
+main {
+  padding: 94px 0 0 0;
+  background-image: url(../img/circle.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top -150px right -120px;
+}
+
+main .top {
+  max-width: 1024px;
+  margin: 0 auto;
+  height: 674px;
+  position: relative;
+}
+
+main .top__contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+main .top__contents--text {
+  margin: 0 auto 0 0;
+}
+
+main .top__contents--text--tit {
+  font-size: 32px;
+  margin: 159px 0 0 0;
+}
+
+main .top__contents--text--subtit {
+  font-size: 16px;
+  margin: 44px 0 0 0;
+}
+
+main .top__contents--text--btn {
+  margin: 53px 0 0 0;
+}
+
+main .feature {
+  max-width: 1024px;
+  height: 1809px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+main .feature__tit {
+  margin: 61px 0 0 0;
+}
+
+main .feature__subtit {
+  margin: 10px 0 0 0;
+}
+
+main .feature__fast-coding--caption, main .feature__quality--caption, main .feature__response--caption {
+  font-size: 28px;
+  text-align: center;
+  margin: 57px 0 0 0;
+}
+
+main .feature__fast-coding--discription, main .feature__quality--discription, main .feature__response--discription {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 0 0;
+}
+
+main .feature__quality--caption {
+  margin: 86px 0 0 0;
+}
+
+main .feature__quality--discription {
+  margin: 60px 0 0 0;
+}
+
+main .feature__response--caption {
+  margin: 86px 0 0 0;
+}
+
+main .feature__response--discription {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0 0 0;
+}
+
+main .price {
+  height: 744px;
+  background-color: #EEFBFB;
+  padding: 10px;
+}
+
+main .price__tit {
+  margin: 45px 0 0 0;
+}
+
+main .price__subtit {
+  margin: 11px 0 0 0;
+}
+
+main .price__list {
+  width: 926px;
+  height: 410px;
+  background-color: #FFFFFF;
+  border-collapse: collapse;
+  margin: 70px auto 0;
+}
+
+main .price__list--tr--coding, main .price__list--tr--cost {
+  font-size: 16px;
+  border: 1px solid #E5E5E5;
+}
+
+main .price__list--tr--coding {
+  width: 290px;
+  text-align: center;
+}
+
+main .price__list--tr--coding br {
+  display: none;
+}
+
+main .price__list--tr--cost {
+  padding: 0 0 0 30px;
+}
+
+main .price__comment {
+  font-size: 16px;
+  text-align: center;
+  margin: 36px 0 0 0;
+}
+
+main .faq {
+  height: 686px;
+}
+
+main .faq__tit {
+  font-size: 32px;
+  text-align: center;
+  margin: 45px 0 0 0;
+}
+
+main .faq__subtit {
+  font-size: 16px;
+  color: #3BA6C9;
+  text-align: center;
+  margin: 11px 0 0 0;
+}
+
+main .faq__list {
+  max-width: 907px;
+  margin: 32px auto 0;
+}
+
+main .faq__list--question1, main .faq__list--question2, main .faq__list--question3 {
+  height: 58px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 58px;
+  border: 1px solid #E5E5E5;
+}
+
+main .faq__list--question1 br, main .faq__list--question2 br, main .faq__list--question3 br {
+  display: none;
+}
+
+main .faq__list--question1:hover, main .faq__list--question2:hover, main .faq__list--question3:hover {
+  background-color: #EEFBFB;
+}
+
+main .faq__list--question1.is-acive, main .faq__list--question2.is-acive, main .faq__list--question3.is-acive {
+  background-color: #EEFBFB;
+}
+
+main .faq__list--answer1, main .faq__list--answer2, main .faq__list--answer3 {
+  font-size: 14px;
+  line-height: 26px;
+  margin: 0;
+  border: 1px solid #E5E5E5;
+  background-color: #E5E5E5;
+  display: none;
+}
+
+main .faq__list--answer1.is-active, main .faq__list--answer2.is-active, main .faq__list--answer3.is-active {
+  display: block;
+}
+
+main .faq__list--answer1 {
+  height: 93px;
+  padding: 17px 87px 0 35px;
+}
+
+main .faq__list--answer2 {
+  height: 70px;
+  padding: 24px 87px 0 35px;
+}
+
+main .faq__list--answer3 {
+  height: 96px;
+  padding: 24px 87px 0 35px;
+}
+
+main .blog {
+  height: 668px;
+  background-color: #EEFBFB;
+  padding: 10px;
+}
+
+main .blog__tit {
+  margin: 45px 0 0;
+}
+
+main .blog__subtit {
+  margin: 10px 0 0;
+}
+
+main .blog__contents {
+  display: flex;
+  justify-content: space-between;
+  margin: 55px 60px 0;
+}
+
+main .blog__contents--img {
+  width: 390px;
+  height: 387px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  position: relative;
+}
+
+main .blog__contents--img img {
+  width: 100%;
+}
+
+main .blog__contents--img--txt--l1 {
+  margin: 14px 30px auto 18px;
+}
+
+main .blog__contents--img--txt--l2 {
+  margin: 0;
+  position: absolute;
+  top: 352px;
+  left: 271px;
+}
+
+main .works {
+  height: 700px;
+}
+
+main .works__tit {
+  margin: 55px 0 0 0;
+}
+
+main .works__subtit {
+  margin: 11px 0 0 0;
+}
+
+main .works__contents {
+  display: flex;
+  justify-content: center;
+}
+
+main .works__contents--img {
+  width: 322px;
+  height: 407px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin: 68px 28px 0;
+}
+
+main .works__contents--img img {
+  width: 100%;
+  height: auto;
+}
+
+main .works__contents--img--txt--l1 {
+  font-size: 16px;
+  display: block;
+  width: 288px;
+  margin: 18px auto auto;
+}
+
+main .works__contents--img--txt--l2 {
+  font-size: 14px;
+  margin: 30px auto auto 18px;
+}
+
+main .contact {
+  height: 1027px;
+  background: linear-gradient(0.25turn, #05A5FA, #63FBD7, #67FFD6);
+  padding: 10px;
+}
+
+main .contact__tit, main .contact__subtit1, main .contact__subtit2 {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+main .contact__tit {
+  font-size: 32px;
+  margin: 53px 0 0 0;
+}
+
+main .contact__subtit1 {
+  font-size: 16px;
+  margin: 7px 0 0 0;
+}
+
+main .contact__subtit2 {
+  font-size: 16px;
+  margin: 36px 0 0 0;
+}
+
+main .contact__form {
+  width: 908px;
+  height: 689px;
+  background-color: #FFFFFF;
+  margin: 44px auto 0;
+  padding: 10px;
+}
+
+main .contact__form--parts {
+  margin: 20px 0 0 62px;
+}
+
+main .contact__form--parts--category {
+  display: flex;
+}
+
+main .contact__form--parts--category--name, main .contact__form--parts--category--email, main .contact__form--parts--category--contact {
+  padding: 3px 23px 3px 0;
+}
+
+main .contact__form--parts input {
+  width: 499px;
+  height: 43px;
+  background-color: #EEFBFB;
+  border: none;
+  margin: 35px 0 0 0;
+}
+
+main .contact__form--parts textarea {
+  width: 783px;
+  height: 179px;
+  background-color: #EEFBFB;
+  border: none;
+  margin: 35px 0 0 0;
+}
+
+main .contact__form--checkbox {
+  font: 16px;
+  text-align: center;
+  margin: 30px 0 0 0;
+}
+
+main .contact__form--checkbox input {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin: 0 10px 0 0;
+}
+
+main .contact__form--submit {
+  display: block;
+  margin: 31px auto 0;
+}
+
+footer {
+  height: 244px;
+  background-color: #F8F8F8;
+  padding: 10px;
+  text-align: center;
+}
+
+footer h1 {
+  font-size: 24px;
+  padding: 33px 0 0 0;
+}
+
+footer .footer-subtit {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  margin: 21px 0 0 0;
+  padding: 0 0 0 40px;
+}
+
+footer .footer-subtit__txt1 br {
+  display: none;
+}
+
+footer .footer-copyright {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 52px 0 0 0;
+}
+
+@media screen and (max-width: 1400px) {
+  /* 1250pxまでの幅の場合に適応される */
+  main .blog {
+    height: 2200px;
+  }
+  main .blog__contents {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .blog__contents--img {
+    width: 600px;
+    height: 550px;
+  }
+  main .blog__contents--img--txt--l2 {
+    top: 500px;
+    left: 450px;
+  }
+  main .blog__contents--img:nth-child(2), main .blog__contents--img:nth-child(3) {
+    margin: 100px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* 1024pxまでの幅の場合に適応される */
+  header .menu__nav {
+    justify-content: start;
+  }
+  header .menu__nav--tit {
+    margin: 0 50px 0 0;
+  }
+  header .menu__nav--link {
+    display: none;
+  }
+  header .menu__nav--btn {
+    margin: 0 50px 0 0;
+  }
+  header .menu__nav--humberger {
+    margin: 0 20px 0 auto;
+    display: block;
+  }
+  main {
+    margin: 0 auto;
+    background-size: 500px;
+  }
+  main .top {
+    max-width: 700px;
+    height: 600px;
+    margin: 0 auto;
+  }
+  main .top__contents--text--tit {
+    font-size: 22px;
+    margin: 30px 0 0 0;
+  }
+  main .top__contents--text--subtit {
+    font-size: 12px;
+  }
+  main .top__contents img {
+    width: 400px;
+    height: auto;
+  }
+  main .feature {
+    max-width: 800px;
+    height: 1500px;
+    margin: 0 auto;
+  }
+  main .feature__tit {
+    font-size: 22px;
+  }
+  main .feature__subtit {
+    font-size: 12px;
+  }
+  main .feature__fast-coding--capion, main .feature__quality--capion, main .feature__response--capion {
+    font-size: 18px;
+  }
+  main .feature__fast-coding--discription, main .feature__quality--discription, main .feature__response--discription {
+    justify-content: space-around;
+  }
+  main .feature__fast-coding--discription img, main .feature__quality--discription img, main .feature__response--discription img {
+    width: 300px;
+    height: auto;
+  }
+  main .feature__fast-coding--discription--txt--l1, main .feature__quality--discription--txt--l1, main .feature__response--discription--txt--l1 {
+    font-size: 18px;
+    margin: 50px 0 0 0;
+    line-height: 30px;
+  }
+  main .feature__fast-coding--discription--txt--l2, main .feature__quality--discription--txt--l2, main .feature__response--discription--txt--l2 {
+    font-size: 12px;
+    margin: 30px 0 0 0;
+    line-height: 20px;
+  }
+  main .price__tit {
+    font-size: 22px;
+  }
+  main .price__subtit {
+    font-size: 12px;
+  }
+  main .price__list {
+    width: 600px;
+  }
+  main .faq__tit {
+    font-size: 22px;
+  }
+  main .faq__subtit {
+    font-size: 12px;
+  }
+  main .faq__list {
+    width: 700px;
+  }
+  main .faq__list--answer1 {
+    height: 120px;
+  }
+  main .blog__tit {
+    font-size: 22px;
+  }
+  main .blog__subtit {
+    font-size: 12px;
+  }
+  main .blog__contents {
+    max-width: 800px;
+    margin: 55px auto 0;
+  }
+  main .works__tit {
+    font-size: 22px;
+  }
+  main .works__subtit {
+    font-size: 12px;
+  }
+  main .works__contents--img {
+    width: 250px;
+    height: 350px;
+  }
+  main .works__contents--img--txt--l1 {
+    font-size: 12px;
+    width: 210px;
+  }
+  main .works__contents--img--txt--l2 {
+    font-size: 10px;
+  }
+  main .contact__tit {
+    font-size: 22px;
+  }
+  main .contact__subtit1 {
+    font-size: 12px;
+  }
+  main .contact__subtit2 {
+    font-size: 12px;
+  }
+  main .contact__form {
+    width: 600px;
+  }
+  main .contact__form--parts {
+    margin: 20px 0 0 40px;
+  }
+  main .contact__form--parts--category--name, main .contact__form--parts--category--email, main .contact__form--parts--category--contact {
+    font-size: 12px;
+  }
+  main .contact__form--parts--category .important-mark {
+    width: 40px;
+    height: 25px;
+    font-size: 10px;
+    line-height: 25px;
+  }
+  main .contact__form--parts input {
+    width: 300px;
+  }
+  main .contact__form--parts textarea {
+    width: 500px;
+  }
+  main .contact__form--checkbox {
+    font-size: 12px;
+  }
+  main .contact__form--checkbox input {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* 768pxまでの幅の場合に適応される */
+  header .menu__nav {
+    justify-content: start;
+  }
+  header .menu__nav--header-logo {
+    width: 40px;
+    height: 40px;
+  }
+  main .top {
+    height: 800px;
+  }
+  main .top__contents {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  main .top__contents--text {
+    margin: 0;
+  }
+  main .top__contents--text--tit {
+    font-size: 28px;
+    text-align: center;
+  }
+  main .top__contents--text--subtit {
+    font-size: 16px;
+    text-align: center;
+  }
+  main .top__contents--text--btn {
+    margin: 53px auto 0;
+    display: block;
+  }
+  main .feature {
+    height: 2200px;
+  }
+  main .feature__fast-coding--discription, main .feature__response--discription {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .feature__quality--discription {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  main .feature__fast-coding--discription--txt--l1, main .feature__fast-coding--discription--txt--l2, main .feature__quality--discription--txt--l1, main .feature__quality--discription--txt--l2, main .feature__response--discription--txt--l1, main .feature__response--discription--txt--l2 {
+    text-align: center;
+  }
+  main .price__list {
+    width: 400px;
+  }
+  main .price__list--tr {
+    height: 70px;
+  }
+  main .price__list--tr--coding {
+    width: 200px;
+  }
+  main .price__list--tr--coding br {
+    display: block;
+  }
+  main .faq {
+    height: 900px;
+  }
+  main .faq__list {
+    width: 420px;
+  }
+  main .faq__list--answer1 {
+    height: 120px;
+  }
+  main .faq__list--answer2 {
+    height: 50px;
+  }
+  main .faq__list--answer3 {
+    height: 80px;
+  }
+  main .faq__list--answer1, main .faq__list--answer2, main .faq__list--answer3 {
+    padding: 20px;
+  }
+  main .blog {
+    height: 1800px;
+  }
+  main .blog__contents--img {
+    max-width: 400px;
+    height: 400px;
+  }
+  main .blog__contents--img--txt--l2 {
+    top: 350px;
+    left: 280px;
+  }
+  main .contact__form {
+    width: 400px;
+  }
+  main .contact__form--parts {
+    margin: 20px 0 0 40px;
+  }
+  main .contact__form--parts--category--name, main .contact__form--parts--category--email, main .contact__form--parts--category--contact {
+    font-size: 12px;
+  }
+  main .contact__form--parts--category .important-mark {
+    width: 40px;
+    height: 25px;
+    font-size: 10px;
+    line-height: 25px;
+  }
+  main .contact__form--parts input {
+    width: 300px;
+  }
+  main .contact__form--parts textarea {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* 600pxまでの幅の場合に適応される */
+  header .menu__nav--tit {
+    font-size: 22px;
+  }
+  header .menu__nav--btn {
+    display: none;
+  }
+  header .menu__nav--humberger {
+    margin: 0 0 0 50px;
+  }
+  footer {
+    height: 200px;
+  }
+  footer h1 {
+    font-size: 16px;
+  }
+  footer .footer-subtit__txt1 {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /* 425pxまでの幅の場合に適応される */
+  header .menu__nav--header-logo {
+    width: 30px;
+    height: 30px;
+  }
+  header .menu__nav--tit {
+    font-size: 20px;
+  }
+  main .faq {
+    height: 900px;
+  }
+  main .faq__list {
+    width: 300px;
+  }
+  main .faq__list--question1, main .faq__list--question2 {
+    line-height: 40px;
+    height: 80px;
+  }
+  main .faq__list--question1 br, main .faq__list--question2 br {
+    display: block;
+  }
+  main .faq__list--answer1 {
+    height: 160px;
+  }
+  main .faq__list--answer2 {
+    height: 80px;
+  }
+  main .faq__list--answer3 {
+    height: 110px;
+  }
+  main .faq__list--answer1, main .faq__list--answer2, main .faq__list--answer3 {
+    line-height: 20px;
+    padding: 20px 40px;
+  }
+  main .blog {
+    height: 1300px;
+  }
+  main .blog__contents--img {
+    max-width: 300px;
+    height: 300px;
+  }
+  main .blog__contents--img--txt--l2 {
+    top: 250px;
+    left: 200px;
+  }
+  main .blog__contents--img--txt--l1, main .blog__contents--img--txt--l2 {
+    font-size: 9px;
+  }
+  main .contact__form {
+    width: 300px;
+  }
+  main .contact__form--parts {
+    margin: 20px 0 0 40px;
+  }
+  main .contact__form--parts--category--name, main .contact__form--parts--category--email, main .contact__form--parts--category--contact {
+    font-size: 12px;
+  }
+  main .contact__form--parts--category .important-mark {
+    width: 40px;
+    height: 25px;
+    font-size: 10px;
+    line-height: 25px;
+  }
+  main .contact__form--parts input {
+    width: 200px;
+  }
+  main .contact__form--parts textarea {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  /* 375pxまでの幅の場合に適応される */
+  main .price__list {
+    width: 350px;
+  }
+  footer {
+    height: 100px;
+  }
+  footer h1 {
+    font-size: 14px;
+  }
+  footer .footer-subtit {
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
