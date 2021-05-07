@@ -4,7 +4,7 @@ AOS.init();
 var swiper = new Swiper('.swiper-container', {
   loop: true,
   slidesPerView: 'auto',
-  spaceBetween: 25.5,
+  spaceBetween: 85.5,
   centeredSlides: true,
   loopAdditionalSlides: 1,
   autoplay: {
@@ -40,12 +40,36 @@ humbergerMenu.addEventListener('click', function() {
 
 // jQuery スムーススクロール
 $(function(){
+  let headerHight = 94; // ヘッダー高さ
   $('a[href^="#"]').click(function(){
     let speed = 1000;
     let href= $(this).attr("href");
     let target = $(href == "#" || href == "" ? 'html' : href);
-    let position = target.offset().top;
+    let position = target.offset().top-headerHight;
     $("html, body").animate({scrollTop:position}, speed, "swing");
     return false;
   });
 });
+
+// jQuery(function(){
+//   var headerHight = 120; //ヘッダーの高さ
+//     //*ページ内リンク
+//     jQuery('a[href^=#]').click(function(){
+//       var href= jQuery(this).attr("href");
+//       var target = jQuery(href == "#" || href == "" ? 'body' : href);
+//       var position = target.offset().top-headerHight;
+//       jQuery("html, body").animate({scrollTop:position}, 550, "swing");
+//       return false;
+//     });
+//     //*ページ外リンク*/      
+//     var url = jQuery(location).attr('href');
+//     if (url.indexOf("?id=") == -1) {
+//       // ほかの処理
+//     }else{
+//       var url_sp = url.split("?id=");
+//       var hash     = '#' + url_sp[url_sp.length - 1];
+//       var target2	= jQuery(hash);
+//       var position2	= target2.offset().top-headerHight;
+//       jQuery("html, body").animate({scrollTop:position2}, 550, "swing");
+//     }
+//   });
