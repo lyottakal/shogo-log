@@ -2,13 +2,17 @@
 .btn {
   width: 155px;
   height: 37px;
+  color: #FFFFFF;
   font-size: 14px;
   font-weight: bold;
-  color: #FFFFFF;
   text-align: center;
   background: linear-gradient(0.25turn, #FA41CC, #6020B0);
   border-radius: 10px;
   border: none;
+}
+
+.btn a {
+  color: #FFFFFF;
 }
 
 .important-mark {
@@ -37,6 +41,16 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
   color: #333333;
   margin: 0%;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body #feature,
+body #price {
+  margin-top: -94px;
+  padding-top: 94px;
 }
 
 header {
@@ -87,7 +101,6 @@ header .menu__nav--link {
 }
 
 header .menu__nav--link li a {
-  text-decoration: none;
   color: #333333;
 }
 
@@ -138,9 +151,18 @@ header .menu__humberger-list li:nth-child(2) {
   background-color: #fff;
 }
 
+header .menu__humberger-list li:nth-child(1) a,
+header .menu__humberger-list li:nth-child(2) a {
+  color: #333;
+}
+
 header .menu__humberger-list li:nth-child(1):hover,
 header .menu__humberger-list li:nth-child(2):hover {
   background-color: #EEFBFB;
+}
+
+header .menu__humberger-list li:nth-child(3) a {
+  color: #fff;
 }
 
 header .menu__humberger-list--contact-color {
@@ -369,8 +391,7 @@ main .blog__subtit {
 
 main .blog__contents {
   display: flex;
-  justify-content: space-between;
-  margin: 55px 60px 0;
+  justify-content: center;
 }
 
 main .blog__contents--img {
@@ -378,6 +399,7 @@ main .blog__contents--img {
   height: 387px;
   background-color: #FFFFFF;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  margin: 55px 15px 0;
   position: relative;
 }
 
@@ -410,7 +432,6 @@ main .works__subtit {
 
 main .works__contents {
   display: flex;
-  justify-content: center;
 }
 
 main .works__contents--img {
@@ -418,7 +439,7 @@ main .works__contents--img {
   height: 407px;
   border-radius: 8px;
   border: 1px solid #ddd;
-  margin: 68px 28px 0;
+  margin: 68px auto 0;
 }
 
 main .works__contents--img img {
@@ -685,7 +706,7 @@ footer .footer-copyright {
     width: 210px;
   }
   main .works__contents--img--txt--l2 {
-    font-size: 10px;
+    font-size: 12px;
   }
   main .contact__tit {
     font-size: 22px;
@@ -708,7 +729,7 @@ footer .footer-copyright {
   main .contact__form--parts--category .important-mark {
     width: 40px;
     height: 25px;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 25px;
   }
   main .contact__form--parts input {
@@ -728,6 +749,10 @@ footer .footer-copyright {
 
 @media screen and (max-width: 768px) {
   /* 768pxまでの幅の場合に適応される */
+  body #contact {
+    margin-top: -94px;
+    padding-top: 94px;
+  }
   header .menu__nav {
     justify-content: start;
   }
@@ -824,7 +849,7 @@ footer .footer-copyright {
   main .contact__form--parts--category .important-mark {
     width: 40px;
     height: 25px;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 25px;
   }
   main .contact__form--parts input {
@@ -853,7 +878,7 @@ footer .footer-copyright {
     font-size: 16px;
   }
   footer .footer-subtit__txt1 {
-    font-size: 9px;
+    font-size: 12px;
   }
 }
 
@@ -893,7 +918,7 @@ footer .footer-copyright {
     padding: 20px 40px;
   }
   main .blog {
-    height: 1300px;
+    height: 1400px;
   }
   main .blog__contents--img {
     max-width: 300px;
@@ -904,38 +929,110 @@ footer .footer-copyright {
     left: 200px;
   }
   main .blog__contents--img--txt--l1, main .blog__contents--img--txt--l2 {
-    font-size: 9px;
+    font-size: 12px;
   }
   main .contact__form {
-    width: 300px;
+    width: 350px;
+    height: 600px;
   }
   main .contact__form--parts {
-    margin: 20px 0 0 40px;
+    margin: 20px auto;
   }
   main .contact__form--parts--category--name, main .contact__form--parts--category--email, main .contact__form--parts--category--contact {
     font-size: 12px;
+    margin: 0 0 0 20px;
   }
   main .contact__form--parts--category .important-mark {
     width: 40px;
     height: 25px;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 25px;
   }
-  main .contact__form--parts input {
-    width: 200px;
-  }
+  main .contact__form--parts input,
   main .contact__form--parts textarea {
-    width: 200px;
+    display: block;
+    width: 330px;
+    margin: 15px auto;
   }
 }
 
 @media screen and (max-width: 375px) {
   /* 375pxまでの幅の場合に適応される */
-  main .price__list {
-    width: 350px;
+  header .menu__nav--tit {
+    margin: 0;
   }
-  footer {
-    height: 100px;
+  header .menu__nav--humberger {
+    width: 40px;
+    height: 20px;
+    margin: 0 0 0 20px;
+  }
+  header .menu__nav--humberger span {
+    width: 40px;
+    transform: translateY(-8px);
+  }
+  header .menu__humberger-list {
+    width: 130px;
+  }
+  header .menu__humberger-list li {
+    height: 50px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+  }
+  main .top {
+    height: 600px;
+  }
+  main .top__contents--text--tit {
+    font-size: 22px;
+  }
+  main .top__contents img {
+    width: 280px;
+  }
+  main .feature__tit,
+  main .price__tit,
+  main .faq__tit,
+  main .blog__tit,
+  main .works__tit,
+  main .contact__tit {
+    font-size: 20px;
+  }
+  main .feature {
+    height: 2300px;
+  }
+  main .feature__fast-coding--caption, main .feature__quality--caption, main .feature__response--caption {
+    font-size: 24px;
+  }
+  main .feature__fast-coding--discription img, main .feature__quality--discription img, main .feature__response--discription img {
+    width: 250px;
+  }
+  main .price__list {
+    width: 260px;
+  }
+  main .price__list--tr--coding {
+    width: 150px;
+  }
+  main .price__list--tr--cost {
+    padding: 10px;
+  }
+  main .faq__list {
+    width: 280px;
+  }
+  main .blog__contents--img {
+    width: 230px;
+    height: 280px;
+  }
+  main .blog__contents--img--txt--l2 {
+    top: 250px;
+    left: 140px;
+  }
+  main .contact__form {
+    width: 260px;
+  }
+  main .contact__form--parts input,
+  main .contact__form--parts textarea {
+    display: block;
+    width: 240px;
   }
   footer h1 {
     font-size: 14px;

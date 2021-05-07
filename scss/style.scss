@@ -6,6 +6,14 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
   color: #333333;
   margin: 0%;
+  a {
+    text-decoration: none;
+  }
+  #feature,
+  #price {
+    margin-top:-94px;
+    padding-top:94px;
+  }
 }
 
 header {
@@ -47,7 +55,6 @@ header {
         margin: 0 184px 0 0;
         li {
           a {
-            text-decoration: none;
             color: #333333;
           }
         }
@@ -91,10 +98,18 @@ header {
       li:nth-child(1),
       li:nth-child(2) {
         background-color: #fff;
+        a {
+          color: #333;
+        }
       }
       li:nth-child(1):hover,
       li:nth-child(2):hover {
         background-color: $lightblue;
+      }
+      li:nth-child(3) {
+        a {
+          color: #fff;
+        }
       }
       &--contact-color {
         color: #FFFFFF;
@@ -308,13 +323,13 @@ main {
     }
     &__contents {
       display: flex;
-      justify-content: space-between;
-      margin: 55px 60px 0;
+      justify-content: center;
       &--img {
         width: 390px;
         height: 387px;
         background-color: #FFFFFF;
         box-shadow: 0px 3px 6px $gray;
+        margin: 55px 15px 0;
         position: relative;
         img {
           width: 100%;
@@ -344,13 +359,12 @@ main {
     }
     &__contents {
       display: flex;
-      justify-content: center;
       &--img {
         width: 322px;
         height: 407px;
         border-radius: 8px;
         border: 1px solid #ddd;
-        margin: 68px 28px 0;
+        margin: 68px auto 0;
         img {
           width: 100%;
           height: auto;
@@ -642,7 +656,7 @@ footer {
             width: 210px;
           }
           &--l2 {
-            font-size: 10px;
+            font-size: 12px;
           }
         }
       }
@@ -671,7 +685,7 @@ footer {
             .important-mark {
               width: 40px;
               height: 25px;
-              font-size: 10px;
+              font-size: 12px;
               line-height: 25px;
             }
           }
@@ -692,14 +706,16 @@ footer {
       }
     }
   }
-
-//   footer {
-//     min-width: 768px;
-//   }
 }
 
 @media screen and (max-width: 768px) {
   /* 768pxまでの幅の場合に適応される */
+  body {
+    #contact {
+      margin-top:-94px;
+      padding-top:94px;
+    }
+  }
   header {
     .menu {
       &__nav {
@@ -831,7 +847,7 @@ footer {
             .important-mark {
               width: 40px;
               height: 25px;
-              font-size: 10px;
+              font-size: 12px;
               line-height: 25px;
             }
           }
@@ -872,7 +888,7 @@ footer {
     }
     .footer-subtit {
       &__txt1 {
-        font-size: 9px;
+        font-size: 12px;
       }
     }
   }
@@ -929,7 +945,7 @@ footer {
     }
 
     .blog {
-      height: 1300px;
+      height: 1400px;
       &__contents {
         &--img {
           max-width: 300px;
@@ -941,7 +957,7 @@ footer {
             }
             &--l1,
             &--l2 {
-              font-size: 9px;
+              font-size: 12px;
             }
           }
         }
@@ -950,27 +966,29 @@ footer {
 
     .contact {
       &__form {
-        width: 300px;
+        width: 350px;
+        height: 600px;
         &--parts {
-          margin: 20px 0 0 40px;
+          margin: 20px auto;
           &--category {
             &--name,
             &--email,
             &--contact {
               font-size: 12px;
+              margin: 0 0 0 20px;
             }
             .important-mark {
               width: 40px;
               height: 25px;
-              font-size: 10px;
+              font-size: 12px;
               line-height: 25px;
             }
           }
-          input {
-            width: 200px;
-          }
+          input,
           textarea {
-            width: 200px;
+            display: block;
+            width: 330px;
+            margin: 15px auto;
           }
         }
       }
@@ -981,22 +999,125 @@ footer {
 
 @media screen and (max-width: 375px) {
   /* 375pxまでの幅の場合に適応される */
+  header {
+    .menu {
+      &__nav {
+        &--tit {
+          margin: 0;
+        }
+        &--humberger {
+          width: 40px;
+          height: 20px;
+          margin: 0 0 0 20px;
+          span {
+            width: 40px;
+            transform: translateY(-8px);
+          }
+        }
+      }
+      &__humberger-list {
+        width: 130px;
+        li {
+          height: 50px;
+          font-size: 14px;
+          height: 30px;
+          line-height: 30px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
   main {
-    .price {
-      &__list {
-        width: 350px;
+    .top {
+      height: 600px;
+      &__contents {
+        &--text {
+          &--tit {
+            font-size: 22px;
+          }
+        }
+        img {
+          width: 280px;
+        }
       }
     }
 
-    // .faq {
-    //   &__list {
-    //     width: 300px;
-    //     &--question1,
-    //     &--question2 {
+    .feature,
+    .price,
+    .faq,
+    .blog,
+    .works,
+    .contact {
+      &__tit {
+        font-size: 20px;
+      }
+    }
 
-    //     }
-    //   }
-    // }
+    .feature {
+      height: 2300px;
+      &__fast-coding,
+      &__quality,
+      &__response {
+        &--caption {
+          font-size: 24px;
+        }
+        &--discription {
+          img {
+            width: 250px;
+          }
+        }
+      }
+    }
+
+    .price {
+
+      &__list {
+        width: 260px;
+        &--tr {
+          &--coding {
+            width: 150px;
+          }
+          &--cost {
+            padding: 10px;
+          }
+        }
+      }
+    }
+
+    .faq {
+      &__list {
+        width: 280px;
+      }
+    }
+
+    .blog {
+      &__contents {
+        &--img {
+          width: 230px;
+          height: 280px;
+          &--txt {
+            &--l2 {
+              top: 250px;
+              left: 140px;
+            }
+          }
+        }
+      }
+    }
+
+    .contact {
+      &__form {
+        width: 260px;
+        &--parts {
+          input,
+          textarea {
+            display: block;
+            width: 240px;
+          }
+        }
+      }
+    }
+
   }
   footer {
     h1 {

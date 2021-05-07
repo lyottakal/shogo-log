@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
   <meta name="robots" content="noindex">
   <meta name="description" content="ユアコーディングはコーディングに特化したフリーランスデザインに注力されたい方の助けになります"> 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
   <!-- fontawesome -->
@@ -28,17 +28,17 @@
         <img src="img/header-logo.png" alt="header-logo" class="menu__nav--header-logo">
         <h1 class="menu__nav--tit">ユアコーディング</h1><!-- /.your-coding -->
         <ul class="menu__nav--link">
-          <li><a href="">特徴</a></li>
-          <li><a href="">価格</a></li>
-          <li><a href="">お問い合わせ</a></li>
+          <li><a href="#feature">特徴</a></li>
+          <li><a href="#price">価格</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
         </ul><!-- /.menu__nav -->
-        <button class="btn menu__nav--btn">お問い合わせ</button><!-- /.btn -->
+        <button class="btn menu__nav--btn"><a href="#contact">お問い合わせ</a></button><!-- /.btn -->
         <div class="menu__nav--humberger" id="humberger-menu"><span></span></div><!-- /.menu__nav--humberger -->
       </nav><!-- /.menu__nav -->
       <ul class="menu__humberger-list" id="humberger-list">
-        <li>特徴</li>
-        <li>価格</li>
-        <li class="menu__humberger-list--contact-color">お問い合わせ</li>
+        <li><a href="#feature">特徴</a></li>
+        <li><a href="#price">価格</a></li>
+        <li class="menu__humberger-list--contact-color"><a href="#contact">お問い合わせ</a></li>
       </ul><!-- /.menu__nav--humberger-list -->
     </div><!-- /.container -->
   </header>
@@ -49,13 +49,13 @@
         <div class="top__contents--text" data-aos="zoom-in" data-aos-duration="500">
           <h1 class="top__contents--text--tit">コーディングの手間を<br>最小に、デザインに注力<br>する助けに</h1><!-- /.top__contents--text--tit -->
           <p class="top__contents--text--subtit">ユアコーディングはコーディングに<br>特化したフリーランス<br>デザインに注力されたい方の<br>助けになります</p><!-- /.top__contents--text--subtit -->
-          <button class="btn top__contents--text--btn">お問い合わせ</button><!-- /.btn -->
+          <button class="btn top__contents--text--btn"><a href="#contact">お問い合わせ</a></button><!-- /.btn -->
         </div><!-- /.top__contents--text -->
         <img src="img/manager.png" alt="manager" data-aos="zoom-in" data-aos-duration="500">
       </div><!-- /.top__contents -->
     </section><!-- /.top -->
     
-    <section class="feature">
+    <section class="feature" id="feature">
       <h1 class="feature__tit tit" data-aos="zoom-in" data-aos-duration="500">ユアコーディング3つの特徴</h1><!-- /.feature__tit -->
       <p class="feature__subtit subtit" data-aos="zoom-in" data-aos-duration="500">FEATURES</p><!-- /.feature__subtit -->
 
@@ -106,7 +106,7 @@
       
     </section><!-- /.feature -->
     
-    <section class="price">
+    <section class="price" id="price">
       <h1 class="price__tit tit" data-aos="fade-up" data-aos-offset="500" data-aos-easing="ease-in-out-cubic">価格</h1><!-- /.price__tit -->
       <p class="price__subtit subtit" data-aos="fade-up" data-aos-offset="500" data-aos-easing="ease-in-out-cubic">PRICE</p><!-- /.price__subtit -->
       <table class="price__list" data-aos="fade-up" data-aos-offset="500" data-aos-easing="ease-in-out-cubic">
@@ -234,7 +234,7 @@
 
     </section><!-- /.works -->
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <h1 class="contact__tit" data-aos="fade-up" data-aos-offset="500" data-aos-easing="ease-in-out-cubic">お問い合わせ</h1><!-- /.contact__tit -->
       <p class="contact__subtit1" data-aos="fade-up" data-aos-offset="500" data-aos-easing="ease-in-out-cubic">CONTACT</p><!-- /.contact__subtit -->
       <p class="contact__subtit2" data-aos="fade-up" data-aos-offset="500" data-aos-easing="ease-in-out-cubic">コーディングの人出が足りないとき、<br>あなたの力になります</p><!-- /.contact__subtit -->
@@ -265,14 +265,14 @@
         
         <div class="contact__form--parts">
           <div class="contact__form--parts--category">
-            <label for="contact" class="contact__form--parts--category--contact">
+            <label for="contact-contents" class="contact__form--parts--category--contact">
               お問い合わせ内容
             </label><!-- /.contact__form--parts--category--contact -->
             <div class="important-mark">
               必須
             </div><!-- /.important-mark -->
           </div><!-- /.contact__form--parts--category -->
-          <textarea name="contact" id="contact" cols="30" rows="10"></textarea><!-- /#contact -->
+          <textarea name="contact-contents" id="contact-contents" cols="30" rows="10"></textarea><!-- /#contact -->
         </div><!-- /.contact__form--parts -->
         <p class="contact__form--checkbox">
           <input type="checkbox" name="policy" id="policy">プライバシーポリシーに同意する
@@ -285,7 +285,7 @@
   <footer>
     <h1>ユアコーディング</h1>
     <div class="footer-subtit">
-      <p class="footer-subtit__txt1">プライバシーポリシー　　個人商取引法に基づく表記
+      <p class="footer-subtit__txt1">プライバシーポリシー　個人商取引法に基づく表記
       </p>
     </div><!-- /.footer-subtit -->
     <p class="footer-copyright">&copy;ユアコーディング, All Rights Reserved.</p>
